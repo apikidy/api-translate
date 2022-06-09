@@ -4,11 +4,9 @@ const translate = require('@iamtraction/google-translate');
 exports.index = (req, res) => {
 	return res.json({
 		status: true,
-		data: {
-			maintainer: 'Azhari Muhammad M <azhari.marzan@gmail.com>',
-			source: 'https://github.com/azharimm/api-translate',
-			endpoint: 'api-translate.azharimm.site/translate?engine={engine}&text={text}&to={to}',
-			example: 'api-translate.azharimm.site/translate?engine=google&text=Welcome&to=id'
+		data: { 
+			endpoint: 'https://apikidy-translate.herokuapp.com/translate?engine={engine}&text={text}&to={to}',
+			example: 'https://apikidy-translate.herokuapp.com//translate?engine=google&text=Welcome&to=id'
 		}
 	})
 }
